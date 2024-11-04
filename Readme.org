@@ -1,0 +1,18 @@
+* multi-vterm.el
+Managing multiple [[https://github.com/akermu/emacs-libvterm][vterm]] buffers in Emacs This package is inspired by [[https://github.com/milkypostman/multi-term][multi-term]] and [[https://github.com/suonlight/multi-vterm][multi-vterm]]
+* Installation
+Clone or download this repository (path of the folder is the <path-to-color-rg> used below).
+
+In your ~/.emacs, add the following two lines:
+#+begin_src bash
+  (add-to-list 'load-path "<path-to-multi-vterm>") ; add multi-vterm to your load-path
+  (require 'multi-vterm)
+#+end_src
+* Usage
+| Command             | Description                                     |
+|---------------------+-------------------------------------------------|
+| multi-vterm         | Create new terminal                             |
+| multi-vterm-next    | Switch to next terminal                         |
+| multi-vterm-prev    | Switch to previous terminal                     |
+| multi-vterm-project | Create/toggle terminal based on current project |
+| multi-vterm-open    | Create/toggle terminal based on current dir     |
