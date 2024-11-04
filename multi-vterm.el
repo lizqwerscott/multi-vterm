@@ -204,15 +204,8 @@ Option OFFSET for skip OFFSET number term buffer."
 (defun multi-vterm-shell-name ()
   "Get shell-name based on var `multi-vterm-program' or env SHELL or default `shell-file-name'."
   (or multi-vterm-program
-      (getenv "SHELL")
-      shell-file-name))
-
-(defun multi-vterm-dedicated-get-window ()
-  "Get `multi-vterm' dedicated window."
-  (setq multi-vterm-dedicated-window
-	    (split-window
-	     (selected-window)
-	     (- (multi-vterm-current-window-height) (multi-vterm-dedicated-calc-window-height)))))
+     (getenv "SHELL")
+     shell-file-name))
 
 (defun multi-vterm-current-window-height (&optional window)
   "Return the height the `window' takes up.
