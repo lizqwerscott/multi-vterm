@@ -3,7 +3,10 @@
 ;; Copyright (C) 2024  lizqwer scott
 
 ;; Author: lizqwer scott <lizqwerscott@gmail.com>
-;; Keywords: lisp
+;; Version: 0.1.0
+;; Package-Requires: ((emacs "25.1") (vterm "20241218.331"))
+;; URL: https://github.com/lizqwerscott/multi-vterm/multi-vterm
+;; Keywords: tools
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
